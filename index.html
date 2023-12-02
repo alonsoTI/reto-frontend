@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto Frontend</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="authForm">
+        <label for="ruc">RUC:</label>
+        <input type="text" id="ruc" name="ruc" required>
+      
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" name="tipo" required>
+      
+        <button type="button" onclick="consultaRuc()">Obtener Token</button>
+      </form>
+      
+      <br>
+      <br>
+      <h1>Listado de Registros</h1>
+        <table id="tabla" border="1">
+            <thead id="thead">
+                <tr>
+                    <th>RUC</th>
+                    <th>Razón Social</th>
+                    <th>Estado</th>
+                    <th>Dirección</th>
+                    <th>Distrito</th>
+                    <th>Departamento</th>
+                    <th>Provincia</th>
+                    <th>Ubigeo</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+<script src="script.js">
+</script>
+</body>
+</html>
